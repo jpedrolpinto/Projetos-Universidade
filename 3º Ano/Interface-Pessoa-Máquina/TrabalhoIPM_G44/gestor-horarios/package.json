@@ -1,0 +1,23 @@
+{
+  "name": "gestor-horarios",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite",
+    "api": "json-server --watch trabalhodb.json --port 3000"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "vue": "^3.4.21",
+    "vue-router": "^4.2.5",
+    "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^6.2.5"
+  }
+}
