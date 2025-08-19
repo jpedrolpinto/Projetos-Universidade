@@ -1,0 +1,6 @@
+CREATE DATABASE IF NOT EXISTS `HorarioSim`;
+
+CREATE USER IF NOT EXISTS 'grupo44'@'localhost' IDENTIFIED BY 'Grupo44#pass!';
+GRANT ALL PRIVILEGES ON * . * TO 'grupo44'@'localhost';
+FLUSH PRIVILEGES;
+
