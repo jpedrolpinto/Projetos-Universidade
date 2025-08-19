@@ -1,0 +1,93 @@
+{
+  "task_id": "TASK_001",
+  "frequency": 20,
+  "devices": [
+    {
+      "device_id": "n1",
+      "device_metrics": {
+        "cpu_usage": true,
+        "ram_usage": true
+      },
+      "link_metrics": {
+        "packet_loss": {
+            "enabled": true,
+            "server_ip": "10.0.7.10",
+            "frequency": 10
+        },
+        "latency": {
+            "ping_destination": "10.0.7.10",
+            "count": 5,
+            "frequency": 10
+        }
+      },
+      "alertflow_conditions": {
+        "cpu_usage": 75,
+        "ram_usage": 80,
+        "latency": 150,
+        "packet_loss": 15
+      }
+    },
+    {
+      "device_id": "n2",
+      "device_metrics": {
+        "cpu_usage": true,
+        "ram_usage": false
+      },
+      "link_metrics": {
+        "latency": {
+            "ping_destination": "10.0.7.10",
+            "count": 5,
+            "frequency": 20
+        }
+      },
+      "alertflow_conditions": {
+        "cpu_usage": 75,
+        "latency": 150
+      }
+    },
+    {
+      "device_id": "n3",
+      "device_metrics": {
+        "cpu_usage": false,
+        "ram_usage": true
+      },
+      "link_metrics": {
+        "packet_loss": {
+            "enabled": true,
+            "server_ip": "10.0.7.10",
+            "frequency": 10
+        },
+        "latency": {
+            "ping_destination": "10.0.7.10",
+            "count": 5,
+            "frequency": 20
+        }
+      },
+      "alertflow_conditions": {
+        "ram_usage": 80,
+        "latency": 150,
+        "packet_loss": 5
+      }
+    },
+    {
+      "device_id": "n4",
+      "device_metrics": {
+        "cpu_usage": true,
+        "ram_usage": true
+      },
+      "link_metrics": {
+        "latency": {
+            "ping_destination": "10.0.7.10",
+            "count": 5,
+            "frequency": 20
+        }
+      },
+      "alertflow_conditions": {
+        "ram_usage": 80,
+        "cpu_usage": 75,
+        "latency": 100
+      }
+    }
+  ]
+}
+
