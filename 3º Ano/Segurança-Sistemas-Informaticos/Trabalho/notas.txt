@@ -1,0 +1,3 @@
+openssl pkcs12 -in VAULT_CLI1.p12 -info -nodes
+
+
